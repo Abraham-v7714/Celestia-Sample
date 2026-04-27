@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-brand-maroon: #2e0813;
+  --color-brand-maroon-light: #520f23;
+  --color-brand-gold: #d4af37;
+  --color-brand-gold-muted: #af8d20;
+  --color-brand-dark: #0a0a0a;
+  --color-brand-darker: #050505;
+  --color-brand-gray: #1a1a1a;
+  --color-brand-gray-light: #2a2a2a;
+  
+  --color-background: var(--color-brand-dark);
+  --color-foreground: #ffffff;
+  
+  --font-sans: var(--font-inter), sans-serif;
+  --font-heading: var(--font-playfair), serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.025em;
+  }
+}
